@@ -1,0 +1,28 @@
+{
+    "name": "elf-fantasy/api",
+    "description": "Package for access to all elf-fantasy.eu apis",
+    "type": "library",
+    "require": {
+        "lorisleiva/laravel-actions": "^2.4",
+        "sammyjo20/saloon": "^1.1",
+        "orchestra/testbench": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Konstantin Knopp",
+            "email": "k.knopp@das-unikat.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ElfFantasy\\API": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ElfFantasy\\API\\ElfFantasyApiServiceProvider"
+            ]
+        }
+    }
+}
