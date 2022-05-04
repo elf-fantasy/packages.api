@@ -2,6 +2,7 @@
     "name": "elf-fantasy/api",
     "description": "Package for access to all elf-fantasy.eu apis",
     "type": "library",
+    "license": "MIT",
     "require": {
         "lorisleiva/laravel-actions": "^2.4",
         "sammyjo20/saloon": "^1.1",
