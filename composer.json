@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ElfFantasy\\API": "src"
+            "ElfFantasy\\API\\": "src"
         }
     },
     "extra": {
