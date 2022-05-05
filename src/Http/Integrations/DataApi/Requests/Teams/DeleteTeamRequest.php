@@ -6,9 +6,9 @@ use ElfFantasy\API\Http\Integrations\DataApi\DataApiConnector;
 use Sammyjo20\Saloon\Constants\Saloon;
 use Sammyjo20\Saloon\Http\SaloonRequest;
 
-class UpdateTeamRequest extends SaloonRequest
+class DeleteTeamRequest extends SaloonRequest
 {
-    protected ?string $method = Saloon::PATCH;
+    protected ?string $method = Saloon::DELETE;
 
     protected ?string $connector = DataApiConnector::class;
 

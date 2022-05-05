@@ -6,18 +6,18 @@ use ElfFantasy\API\Http\Integrations\DataApi\DataApiConnector;
 use Sammyjo20\Saloon\Constants\Saloon;
 use Sammyjo20\Saloon\Http\SaloonRequest;
 
-class UpdateTeamRequest extends SaloonRequest
+class DeletePlayerRequest extends SaloonRequest
 {
-    protected ?string $method = Saloon::PATCH;
+    protected ?string $method    = Saloon::DELETE;
 
     protected ?string $connector = DataApiConnector::class;
 
-    public function __construct(public int $teamId)
+    public function __construct(public string $playerId)
     {
     }
 
     public function defineEndpoint(): string
     {
-        return '/v1/teams/'.$this->teamId;
+        return '/v1/players/'.$this->playerId;
     }
 }
