@@ -18,9 +18,9 @@ class DataApiConnector extends SaloonConnector
      */
     protected array $requests = [];
 
-    public function __construct(DataApiTokenService $dataApiTokenService)
+    public function __construct()
     {
-
+        new DataApiTokenService();
     }
 
     /**
