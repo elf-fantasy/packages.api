@@ -17,7 +17,5 @@ class DeleteLocationAction
             'id'       => $id,
         ]);
         $response = $deleteLocationRequest->send();
-
-        Log::info($response->body());
     }
 }
