@@ -2,6 +2,7 @@
 
 namespace ElfFantasy\API\Http\Integrations\DataApi;
 
+use ElfFantasy\API\Services\DataApiTokenService;
 use Sammyjo20\Saloon\Http\SaloonConnector;
 use Sammyjo20\Saloon\Traits\Plugins\AcceptsJson;
 
@@ -16,6 +17,11 @@ class DataApiConnector extends SaloonConnector
      * @var array
      */
     protected array $requests = [];
+
+    public function __construct(DataApiTokenService $dataApiTokenService)
+    {
+
+    }
 
     /**
      * Define the base url of the api.
