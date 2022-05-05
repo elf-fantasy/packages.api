@@ -2,7 +2,7 @@
 
 namespace ElfFantasy\API\Http\Integrations\DataApi\Requests\Teams;
 
-use Elffantasy\API\Http\Integrations\DataApi\DataApiConnector;
+use ElfFantasy\API\Http\Integrations\DataApi\DataApiConnector;
 use Sammyjo20\Saloon\Constants\Saloon;
 use Sammyjo20\Saloon\Http\SaloonRequest;
 
